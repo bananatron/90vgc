@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>90s Video Game Club</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <!-- <link rel="apple-touch-icon" href="icon.png"> -->
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fff9ed">
+
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+  <style>
+    html, body {
+      background-color: #fff9ed;
+      padding: 0.5rem;
+      font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .button {
+      cursor: pointer;
+      border: 4px solid black;
+      background-color: white;
+      letter-spacing: 0.05em;
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+      color: rgba(0, 0, 0, 0.9);
+      transition: box-shadow 0.1s ease-in-out;
+    }
+
+    .button.is-raised {
+      box-shadow: 2px 2px 0 0 black;
+    }
+
+    .button.is-raised:hover {
+      box-shadow: 4px 4px 0 0 black
+    }
+
+    .button.is-sign-up {
+      background-color: pink;
+    }
+
+    input[type='text'],
+    input[type='email'] {
+      border: 4px solid black;
+      padding: 0.25rem;
+    }
+    details {cursor: pointer;}
+    summary {margin-bottom: 1rem;}
+  </style>
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+
+  <nav class="container flex items-center justify-between">
+    <h1 class="f2 lh-title">Registration</h1>
+    <button class="button is-sign-up is-raised">Sign Up</button>
+  </nav>
+  
+  <section class="container">
+    <form action="">
+      <div class="flex items-center">
+        <label class="dib mr2" for="reg_email">Email</label>
+        <input type="email" id="reg_email">
+      </div>
+
+      <input type="submit" class="button is-raised db mt2">
+    </form>
+  </section>
+
+  <section class="container">
+    <details class="mt4">
+      <summary>Why do you need my email?</summary>
+      <p class="lh-copy">We use email to send group communication about upcoming game selection and voting. We'll never sell/trade/lease your email to any other entity.</p>
+    </details>
+  </section>
+
+
+  <div class="mb5"></div>
+
+  <footer class="container">
+    <article class="db mb4">
+      <p class="f5 lh-copy">The <span class="b">90's Video Game Club is like a book club, but for video games.</span> Each month, we'll casually play through a PC game from the 90s and discuss the work. We welcome those playing through these games for the first time, as well as players looking to refuel theirn nostalgia.</p>
+    </article>
+  </footer>
+</body>
+
+</html>

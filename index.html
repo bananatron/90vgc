@@ -1,0 +1,147 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>90s Video Game Club</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <!-- <link rel="apple-touch-icon" href="icon.png"> -->
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fff9ed">
+
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+  <style>
+    html, body {
+      background-color: #fff9ed;
+      padding: 0.5rem;
+      font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .game-overview {
+      background-color: white;
+      border: 4px solid black;
+      border-radius: 4px;
+      padding: 1rem 2rem;
+      box-shadow: 4px 4px 0 0 black;
+      margin-bottom: 1.5rem;
+    }
+
+    .game-image {
+      width: 200px;
+      height: 100px;
+      min-width: 200px;
+      background-size: cover;
+      border: 2px solid black;
+      background-color: black;
+      border-bottom: 0;
+    }
+
+    .game-image.is-half-life {
+      background-image: url(' https://media.moddb.com/images/mods/1/19/18598/Half-Life_Cover_Art.jpg');
+    }
+
+    .button {
+      cursor: pointer;
+      border: 4px solid black;
+      background-color: white;
+      letter-spacing: 0.05em;
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+      color: rgba(0, 0, 0, 0.9);
+      transition: box-shadow 0.1s ease-in-out;
+    }
+
+    .button.is-raised {
+      box-shadow: 2px 2px 0 0 black;
+    }
+
+    .button.is-raised:hover {
+      box-shadow: 4px 4px 0 0 black
+    }
+
+    .button.is-sign-up {
+      background-color: pink;
+    }
+
+    .fg1 {
+      flex-grow: 1;
+    }
+    details {cursor: pointer;}
+    summary {margin-bottom: 1rem;}
+  </style>
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+
+  <nav class="container flex items-center justify-between">
+    <h1 class="f2 lh-title">⌨️ 90VGC</h1>
+    <button class="button is-sign-up is-raised">Sign Up</button>
+  </nav>
+  
+  <section class="container">
+    <article class="db mb4">
+      <p class="f5 lh-copy">The <span class="b">90's Video Game Club is like a book club, but for video games.</span> Each month, we'll casually play through a PC game from the 90s and discuss the work. We welcome those playing through these games for the first time, as well as players looking to fuel their nostalgia.</p>
+    </article>
+  
+    <article class="game-overview">
+      <div class="flex items-center">
+        <div>
+          <h3 class="ttu mv2 o-80 f7 tracked">November - Half Life 1</h3>
+          <p class="lh-copy">Perhaps one of the most iconic games of it's genre, this 1998 release became an instant fan favorite. Join us as we dive into Black Mesa and rediscover the role of Gordon Freeman in this Valve classic.</p>
+        </div>
+        <div class="flex flex-column ml3">
+          <div class="game-image is-half-life"></div>
+          <div class="button is-register">Register</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="game-overview">
+      <div class="flex items-center">
+        <div class="fg1">
+          <h3 class="ttu mv2 o-80 f7 tracked">December - ???</h3>
+          <div class="db b mt3">Voting ongoing...</div>
+        </div>
+        <div class="game-image"></div>
+      </div>
+    </article>
+  </section>
+
+  <section class="container">
+    <h2 class="lh-title f3 mt5">FAQ</h2>
+    <details>
+      <summary>Are there any rules?</summary>
+      <ol class="lh-copy">
+        <li>Be kind and respect others. Trolling, hate speech, othering, or general asshattery of any kind is prohibited.</li>
+      </ol>
+    </details>
+    <details>
+      <summary>How does 90VDC communicate?</summary>
+      <p class="lh-copy">We communicate primarily via discord. You'll receive an invite to the channel upon registration.</p>
+    </details>
+    <details>
+      <summary>How does 90VDC decide which games to play?</summary>
+      <p class="lh-copy">We vote on the next game to play. The game which meets the voting requirements with the most votes is added to the list.</p>
+    </details>
+  </section>
+
+  <div class="mb5"></div>
+</body>
+
+</html>
